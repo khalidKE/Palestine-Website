@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in && sign Up</title>
+    <link rel="stylesheet" href="/p/login/login (1).css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- ده استدعاء اللينك  بتاع الايقونات  -->
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="icon"><i class='bx bxl-google'></i></a>
+                    <a href="#" class="icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" class="icon"><i class='bx bxl-github'></i></a>
+                </div>
+                <samp>or use your email for registration</samp>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="#">
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1" target="_blank" class="icon"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://accounts.google.com/v3/signin/identifier?flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=en-GB&ifkv=ARZ0qKKj4bx1iOku3SnTCxTbCJD8NTWAHu5JoACtTssFCajyM0y3-LhRdiNjpW1dOnK4-ayflKlwHA&dsh=S1493996883%3A1712584376544365&theme=mn&ddm=0" target="_blank" class="icon"><i class='bx bxl-google'></i></a>
+                    <a href="https://www.linkedin.com/learning-login/?redirect=%2Flearning%2F%3FupsellOrderOrigin%3Dsem-ga_campid%2E20576775784_asid%2E155415804684_crid%2E674649999486_kw%2Ehow+to+sign+up+for+linkedin+learning_d%2Ec_tid%2Ekwd-894118243898_n%2Eg_mt%2Eb_geo%2E1005390&upsellOrderOrigin=sem-ga_campid%2E20576775784_asid%2E155415804684_crid%2E674649999486_kw%2Ehow+to+sign+up+for+linkedin+learning_d%2Ec_tid%2Ekwd-894118243898_n%2Eg_mt%2Eb_geo%2E1005390&fromSignIn=true&trk=homepage-learning_nav-header-signin" target="_blank" class="icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsignup"target="_blank" class="icon"><i class='bx bxl-github'></i></a>
+                </div>
+                <samp>or use your email Password</samp>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#" id="myLink" class="fp">Forget password?</a>
+                <a href="/Home/p.html" class="fp">Back to home</a>
+                <button onclick="refreshPage()">Sign In</button>
+                
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of our site features and always remember this :  <span>free phalestine</span></p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features and always remember this : <span>free phalestine</span></p>
+                    <button class="hidden" id="register" >Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/p/login/login (1).js"></script>
+</body>
+
+</html>

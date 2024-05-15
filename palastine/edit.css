@@ -1,0 +1,196 @@
+ /* code css */
+
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 80px;
+}
+
+.portfolio .portfolio-content .card {
+    background-color: white;
+}
+
+.portfolio .portfolio-content .card img {
+    max-width: 100%;
+}
+
+.portfolio .portfolio-content .card .info {
+    padding: 20px;
+}
+
+.portfolio .portfolio-content .card .info h3 {
+    margin: 0px;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+
+.portfolio .portfolio-content .card .info p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0px;
+}
+
+/************** About **************/
+.about {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.about-content {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-content .image {
+    position: relative;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+}
+
+.about-content .image::before {
+    content: "";
+    position: absolute;
+    background-color: #f6f6f6;
+    width: 130px;
+    height: calc(100% + 60px);
+    top: -30px;
+    left: -45px;
+    z-index: -1;
+}
+
+.about-content .image::after {
+    content: "";
+    position: absolute;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+    width: 90px;
+    height: 300px;
+    top: -40px;
+    left: 300px;
+    z-index: -1;
+}
+
+.about-content .text {
+    flex-basis: calc(100% - 500px);
+}
+
+.about-content hr {
+    width: 50%;
+    display: inline-block;
+    border-color: var(--main-color);
+}
+
+.about-content .text p:first-of-type {
+    margin: 0px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: var(--secondary-color);
+    line-height: 2;
+}
+
+.about-content .text p:last-of-type {
+    margin: 0px;
+    line-height: 2;
+    margin-bottom: 50px;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content .text p:first-of-type {
+        margin-top: 50px;
+    }
+
+    .about-content .image::before,
+    .about-content .image::after {
+        display: none;
+    }
+}
+
+/************** Contact **************/
+.contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+
+.contact .info {
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.contact .info .label {
+    color: var(--secondary-color);
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+
+.contact .info a {
+    color: var(--main-color);
+    display: block;
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+.contact .info .social {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .info .social a i {
+    margin-left: 10px;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+
+    .contact .info .label,
+    .contact .info a {
+        font-size: 100%;
+    }
+}
+
+/************** Footer **************/
+.footer {
+    padding: 8px;
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer span {
+    color: var(--main-color);
+    }
+
+/* code html */
+
+<div id="portfolio" class="portfolio"><div class="portfolio-title section-title"><h2>portfolio</h2><p>If you do it right,
+it will last forever.</p></div><div class="container"><div class="portfolio-content"><div class="card"><img src="images/card1.webp" /><div class="info"><h3>Project Here</h3><p>My creative ability is very difficult to measure because it can manifest in so many surprising ans. </p></div></div><div class="card"><img src="images/card2.jpg" /><div class="info"><h3>Project Here</h3><p>My creative ability is very difficult to measure because it can manifest in so many surprising ans. </p></div></div><div class="card"><img src="images/card3.webp" /><div class="info"><h3>Project Here</h3><p>My creative ability is very difficult to measure because it can manifest in so many surprising ans. </p></div></div></div></div></div>< !---------------- About ----------------><div id="about" class="about"><div class="about-title section-title"><h2>about</h2><p>Less is more work.</p></div><div class="container"><div class="about-content"><div class="image"><img src="images/about.jpg" alt="" /></div><div class="text"><p>Lorem,
+ipsum dolor sit amet consectetur adipisicing elit. Optio possimus,
+est vitae eum quibusdam atque voluptatem quod fugit iste voluptatum ipsa consequatur quo provident eaque sequi rem mollitia corporis sunt ! </p><hr /><p>Lorem ipsum dolor,
+sit amet consectetur adipisicing elit. Animi eum,
+impedit ab ratione itaque dolore praesentium beatae maiores facere dolorem et voluptas iusto dolorum quae deleniti commodi. Nihil,
+voluptates itaque. </p></div></div></div></div>< !---------------- Contact ----------------><div id="contact" class="contact"><div class="contact-title section-title"><h2>contact</h2><p>We are born to create.</p></div><div class="container"><div class="info"><div class="label">Feel free to drop us a line at:</div><a href="mailto:ibrahim.alghrbawy@gmail.com?subject=Contact"
+>ibrahim.alghrbawy@gmail.com</a><div class="social">Find Us On Social Networks <a href="https://www.facebook.com/ebrahim.elghrbawy.35/"><i class="fabrands fa-facebook"></i></a><a href="https://www.linkedin.com/in/ebrahim-mohmed-829132249/"><i class="fa-brands fa-linkedin"></i></a></div></div></div></div>< !---------------- Footer ----------------><div class="footer"><p></p>&copy;
+2024 - <span>Leon</span>,
+All Right Reserved</p></div>
