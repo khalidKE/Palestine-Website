@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    background-image: url('/Home/npp.jpg');
+    width: 100%;
+    height: 110vh;
+background-size: cover;
+background-position: center;
+}
+nav {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    backdrop-filter: blur(22px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5vh;
+    padding-right: 4vh;
+    padding-bottom: 10px;
+    background-color: rgb(0 0 0 / 66%);
+    height: 13vh;
+    color: #fffffff7;
+}
+span{
+    color: red;
+}
+li {
+    padding-left: 5vh;
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+
+.sbm1{
+    display: none;
+}
+nav ul li:hover .sbm1{
+    position: absolute;
+    display: block;
+    padding-top: 0px;
+    margin-top: 0px;
+    background: #eee;
+    
+}
+.li3,.li2,.li1{
+    transition: 3s;
+    display: inline-block;
+    
+    padding-top: 10px;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+}
+.active ,li:hover{
+    color: red;
+    
+    
+}
+.bod{
+    border-bottom: 2px solid red ;
+}
+.h{
+    color: #ffffffd4;
+    text-align: center;
+    padding-top: 25vh;
+    font-size: 6vh;
+    padding-bottom: 10px;
+}
+.hh{
+        color: #ffffffd4;
+        text-align: center;
+        font-size: 4vh;
+}
+
+.k {
+    font-size: ;
+    color: white;
+    margin: 30px auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgba(255, 255, 255, 0.745);
+    animation: control-width 3s 2s steps(30) both, blink 0.5s infinite;
+    -webkit-animation: control-width 3s 2s steps(30) both, blink 0.5s infinite;
+}
+
+@keyframes control-width {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 632px;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-right-color: white;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.foot{
+    color: red;
+    text-align: center;
+    margin-top: 155px;
+    font-weight: 900 ;
+}
+.cl {
+    text-align: center;
+    color: red;
+    cursor: pointer;
+
+}
+.collect{
+    margin-top: 26px;
+    height: 100%;
+    background-color: black;
+    
+}
+
+.t2{
+    color: rgb(255, 255, 255);
+    background-color: red;
+    text-align: center;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    font-size: larger;
+    text-shadow:0px;
+    
+    font-family: "Bebas Neue", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+}
+
+.ph {
+    padding-top: 20px;
+    width: 435px;
+    height: 305px;
+    padding-left: 25px;
+    display: flex;
+    display: inline;
+}
+
+.box1{
+    color: #eee;
+    display: flex;
+    display: inline;
+    text-align: center;
+}
+
+.kcontainer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+    text-align: center;
+    font-size: 0;
+}
+
+.cl {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid green;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+}
+
+
+.cl {
+    background: rgb(228, 14, 14);
+    border-radius: 20px;
+    border: none;
+    box-shadow: inset 0 0 0 0 #ECDB54;
+}
+
+.cl:hover {
+    color: #222222;
+    box-shadow: inset 200px 0 0 0 #ECDB54;
+}
+
+nav h2:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.6);
+        opacity: 35%;
+}
+
+.box1{
+    margin-top: 40px;
+    margin-left: 70px;
+    display: inline-block;
+    
+}
+.photo{
+    margin-top: 35px;
+    margin-left: 10px;
+    width: 1493px;
+    height: 575px;
+}
+
+
+
+.report-container {
+    padding: 5px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.report-container h2 {
+    margin-top: 0;
+}
+
+.report-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.report-container th,
+.report-container td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.report-container th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.pp{
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.dot {
+    display: inline;
+    position: absolute;
+    left: 20px;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    opacity: 0;
+    animation: fade-in-out 1s linear infinite;
+    
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+.kk{
+    text-decoration: none;
+    
+    padding: 10px;
+    padding-left: 40px;
+    font-weight: 900;
+    font-family: "Bebas Neue";
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-size: 20px;
+    
+}
+.tt{
+    color: white;
+}
+.tt:hover{
+    color: red;
+}
+
+
+
+
+
+.progress-wrap {
+    right: 25px;
+    bottom: 25px;
+    color: white;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 2px white;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 200ms linear;
+}
+
+.progress-wrap input {
+    z-index: 10001;
+}
+
+.progress-wrap input:checked+html {
+    -ms-scroll-snap-type: unset;
+    scroll-snap-type: unset;
+}
+
+.progress-wrap.active-progress {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.progress-wrap::after {
+    position: absolute;
+    content: "↑";
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    color: gray;
+    left: 0;
+    top: -2px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    transition: all 200ms linear;
+}
+
+.progress-wrap:hover::after {
+    opacity: 0;
+}
+
+.progress-wrap:hover::before {
+    opacity: 1;
+    
+}
+
+.progress-wrap::before {
+    position: absolute;
+    content: "↑";
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    opacity: 0;
+    -webkit-text-fill-color: #F13E51;
+    left: 0;
+    top: -2px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 2;
+    transition: all 200ms linear;
+}
+
+.progress-wrap svg path {
+    fill: none;
+}
+
+.progress-wrap svg.progress-circle path {
+    stroke: #F13E51;
+    stroke-width: 4;
+    box-sizing: border-box;
+    transition: all 200ms linear;
+}
+
+
+iframe{
+    
+    height: 90%;
+    width: 100%;
+    height: 612px;
+}
+
+#kk2{
+    color: rgba(0, 0, 0, 0.81) !important;
+    font-weight: 800;
+    padding-bottom: 5px;
+    font-size: larger;
+}
+
+.u{
+    font-weight: 900;
+    font-size: larger;
+    padding: 25px;
+}
